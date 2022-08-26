@@ -3,4 +3,4 @@ language:
 after_sucess:
 - sudo apt update -y 
 - sudo apt install sshpass -y  
-- sshpass -p ${Password} ssh -o stricthostkeychecking=no travis@${IPADDR} "cd /home/travis && sudo sh deploy.sh"
+- sshpass -p ${Password} ssh -o stricthostkeychecking=no travis@${IPADDR} "cd /home/travis/spring && sudo sh deploy.sh"
